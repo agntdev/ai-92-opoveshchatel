@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mute alerts",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Activate cooldown period to mute further alerts"
+            }
+          }
+        ],
+        "send": {
+          "callback": "alert:cooldown"
+        }
+      }
+    ]
+  }
+]
