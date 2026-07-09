@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Share location",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Request user to share current location"
+            }
+          }
+        ],
+        "send": {
+          "callback": "location:request"
+        }
+      }
+    ]
+  }
+]
